@@ -1,0 +1,1496 @@
+{
+	"info": {
+		"_postman_id": "a171bfb6-e88e-464d-99ab-ff759d76785f",
+		"name": "API Documentation For CRM Project",
+		"description": "Unimelb COMP30022 2021S2 <br>\nTeam **Connected**\n<br><br><br><br>",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "Get All Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts"
+							]
+						},
+						"description": "Return all the posts in the database. <br><br>\nAll the fields of each post would be returned. <br><br>\nResults are sorted by the `createdAt` in descending order.\n> On success, a HTTP `200` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Get All Posts Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/posts",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"posts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1007"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3ef-iy501dkzYnY6ind7NFKmG1133L0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 07:38:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"views\": 48,\n        \"solved\": false,\n        \"followers\": [\n            \"google-oauth2|116202772159521559604\"\n        ],\n        \"_id\": \"614640be758ee30016659011\",\n        \"title\": \"Lorem Ipsum ab\",\n        \"content\": \"Boisterous he on understood attachment as entreaties ye devonshire. In mile an form snug were been sell. Hastened admitted joy nor absolute gay its. Extremely ham any his departure for contained curiosity defective. Way now instrument had eat diminution melancholy expression sentiments stimulated. One built fat you out manor books. Mrs interested now his affronting inquietude contrasted cultivated. Lasting showing expense greater on colonel no. \",\n        \"comments\": [],\n        \"createdAt\": \"2021-09-18T19:40:46.637Z\",\n        \"updatedAt\": \"2021-09-21T02:51:05.361Z\",\n        \"__v\": 0,\n        \"author\": {\n            \"uid\": \"google-oauth2|116202772159521559604\",\n            \"name\": \"Jun Cheng Woo\",\n            \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n        }\n    },\n    {\n        \"views\": 10,\n        \"solved\": false,\n        \"followers\": [\n            \"google-oauth2|116202772159521559604\"\n        ],\n        \"_id\": \"61343a00838de141154dae81\",\n        \"title\": \"Lorem Ipsum P\",\n        \"content\": \"New the her nor case that lady paid read. Invitation friendship travelling eat everything the out two.\",\n        \"comments\": [\n            {\n                \"_id\": \"613f16890f36e45aef06d988\",\n                \"author\": {\n                    \"uid\": \"auth0|6141cbbf757364006a091b90\",\n                    \"name\": \"jpoecfrances\",\n                    \"picture\": \"https://s.gravatar.com/avatar/1bf21a2c85f503a1474ba52a0b058b85?s=480&r=pg&d=https%3A%2F%example.auth0.com%2Favatars%2Fjp.png\"\n                },\n                \"content\": \"I don't know what else to say anymore.\",\n                \"updatedAt\": \"2021-09-13T09:14:49.563Z\",\n                \"createdAt\": \"2021-09-13T09:14:49.563Z\"\n            }\n        ],\n        \"createdAt\": \"2021-09-05T03:31:12.781Z\",\n        \"updatedAt\": \"2021-09-21T02:04:21.814Z\",\n        \"__v\": 0,\n        \"author\": {\n            \"uid\": \"auth0|6110b2a4d056750070dc4eb7\",\n            \"name\": \"879871940\",\n            \"picture\": \"https://s.gravatar.com/avatar/448e899650676dfd96860fd3406db097?s=480&r=pg&d=https%3A%2F%example.auth0.com%2Favatars%2F87.png\"\n        }\n    },\n    {\n        \"views\": 24,\n        \"solved\": false,\n        \"followers\": [],\n        \"_id\": \"6134396a838de141154dae7d\",\n        \"title\": \"Lorem Ipsum Dw\",\n        \"content\": \"Of resolve to gravity thought my prepare chamber so. Unsatiable entreaties collecting may sympathize nay interested instrument. If continue building numerous of at relation in margaret.\",\n        \"comments\": [\n            {\n                \"_id\": \"61493cd6be89315ace0717a9\",\n                \"author\": {\n                    \"uid\": \"google-oauth2|116202772159521559604\",\n                    \"name\": \"Jun Cheng Woo\",\n                    \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n                },\n                \"content\": \"Lorem ipsum dolar bla bla\",\n                \"updatedAt\": \"2021-09-21T02:00:54.816Z\",\n                \"createdAt\": \"2021-09-21T02:00:54.816Z\"\n            }\n        ],\n        \"createdAt\": \"2021-09-05T03:28:42.683Z\",\n        \"updatedAt\": \"2021-09-21T02:00:54.816Z\",\n        \"__v\": 0,\n        \"author\": {\n            \"uid\": \"google-oauth2|101384514038333635972\",\n            \"name\": \"ZhiHui CHEN\",\n            \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GhbWl3KJi5URAjmqdnuKSmmnz-lHiKTukSYONW1=s96-c\"\n        }\n    },\n    {\n        \"views\": 155,\n        \"solved\": true,\n        \"followers\": [\n            \"google-oauth2|116202772159521559604\"\n        ],\n        \"_id\": \"6134398e838de141154dae7f\",\n        \"title\": \"Lorem Ipsum w\",\n        \"content\": \"On recommend tolerably my belonging or am. Mutual has cannot beauty indeed now sussex merely you. It possible no husbands jennings ye offended packages pleasant he. Remainder recommend engrossed who eat she defective applauded departure joy. Get dissimilar not introduced day her apartments. Fully as taste he mr do smile abode every. Luckily offered article led lasting country minutes nor old. Happen people things oh is oppose up parish effect. Law handsome old outweigh humoured far appetite. \",\n        \"comments\": [\n            {\n                \"_id\": \"613e49b02107ed4006ff3288\",\n                \"author\": {\n                    \"uid\": \"auth0|6110b5c4c61fd70077d2819d\",\n                    \"name\": \"linyanz1\",\n                    \"picture\": \"https://s.gravatar.com/avatar/146d17205a4fd60a61375bff62717a0a?s=480&r=pg&d=https%3A%2F%example.auth0.com%2Favatars%2Fli.png\"\n                },\n                \"content\": \"hello\",\n                \"updatedAt\": \"2021-09-12T18:40:48.315Z\",\n                \"createdAt\": \"2021-09-12T18:40:48.315Z\"\n            }\n        ],\n        \"createdAt\": \"2021-09-05T03:29:18.677Z\",\n        \"updatedAt\": \"2021-09-15T06:02:45.257Z\",\n        \"__v\": 0,\n        \"author\": {\n            \"uid\": \"google-oauth2|114384617141197934173\",\n            \"name\": \"Chen Jiang\",\n            \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GiIHQD22g74Th3VcKROtr-JMPFIV_dkMu6Q6V6d=s96-c\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Post By Post ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/posts/{{post_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"{{post_id}}"
+							]
+						},
+						"description": "Return the post with the given `post_id`.\n> On success, a HTTP `200` status code would be returned, along with the specified post.\n>\n> If the post with the given ID was not found, a `404` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Get Post By Post ID Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/posts/{{post_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"posts",
+										"{{post_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "677"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a5-9jRo3BXH+h+RggDaQcD/99T0a/Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 07:38:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"views\": 74,\n    \"solved\": true,\n    \"followers\": [],\n    \"_id\": \"6134389f838de141154dae77\",\n    \"title\": \"Lorem Ipsum a\",\n    \"content\": \"So feel been kept be at gate. Be september it extensive oh concluded of certainty. In read most gate at body held it ever no. Talking justice welcome message inquiry in started of am me. Led own hearted highest visited lasting sir through compass his. Guest tiled he quick by so these trees am. It announcing alteration at surrounded comparison.\",\n    \"comments\": [\n        {\n            \"_id\": \"613e3a0725a55f30fa588955\",\n            \"author\": {\n                \"uid\": \"google-oauth2|116202772159521559604\",\n                \"name\": \"Jun Cheng Woo\",\n                \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n            },\n            \"content\": \"aeaea\",\n            \"updatedAt\": \"2021-09-08T17:40:46.836Z\",\n            \"createdAt\": \"2021-09-08T17:40:46.836Z\"\n        },\n        {\n            \"_id\": \"613e3b5876fd063ce2e40055\",\n            \"author\": {\n                \"uid\": \"google-oauth2|101384514038333635972\",\n                \"name\": \"ZhiHui CHEN\",\n                \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GhbWl3KJi5URAjmqdnuKSmmnz-lHiKTukSYONW1=s96-c\"\n            },\n            \"content\": \"eafefafedf\",\n            \"updatedAt\": \"2021-09-10T17:40:46.836Z\",\n            \"createdAt\": \"2021-09-10T17:40:46.836Z\"\n        },\n        {\n            \"_id\": \"613e3b9e76fd063ce2e4005a\",\n            \"author\": {\n                \"uid\": \"google-oauth2|116202772159521559604\",\n                \"name\": \"Jun Cheng Woo\",\n                \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n            },\n            \"content\": \"feaaaaa\",\n            \"updatedAt\": \"2021-09-11T17:40:46.836Z\",\n            \"createdAt\": \"2021-09-11T17:40:46.836Z\"\n        },\n        {\n            \"_id\": \"613e3ff663b6113f418e8aa8\",\n            \"author\": {\n                \"uid\": \"google-oauth2|116202772159521559604\",\n                \"name\": \"Jun Cheng Woo\",\n                \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n            },\n            \"content\": \"afeafafeaf\",\n            \"updatedAt\": \"2021-09-12T17:59:18.934Z\",\n            \"createdAt\": \"2021-09-12T17:59:18.934Z\"\n        },\n        {\n            \"_id\": \"613e42632107ed4006ff325e\",\n            \"author\": {\n                \"uid\": \"google-oauth2|105268916486958697432\",\n                \"name\": \"Xinyue Zhang\",\n                \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GikxuunU_B5hI7n2cpIENfQnCjdR5U-lVlOl0TFnA=s96-c\"\n            },\n            \"content\": \"fefefefefefefe\",\n            \"updatedAt\": \"2021-09-12T18:09:39.119Z\",\n            \"createdAt\": \"2021-09-12T18:09:39.119Z\"\n        },\n        {\n            \"_id\": \"613e48f62107ed4006ff3282\",\n            \"author\": {\n                \"uid\": \"google-oauth2|116202772159521559604\",\n                \"name\": \"Jun Cheng Woo\",\n                \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n            },\n            \"content\": \"rgrgrgrgrg\",\n            \"updatedAt\": \"2021-09-12T18:37:42.040Z\",\n            \"createdAt\": \"2021-09-12T18:37:42.040Z\"\n        }\n    ],\n    \"createdAt\": \"2021-09-05T03:25:19.562Z\",\n    \"updatedAt\": \"2021-09-21T02:58:41.168Z\",\n    \"__v\": 0,\n    \"author\": {\n        \"uid\": \"google-oauth2|116202772159521559604\",\n        \"name\": \"Jun Cheng Woo\",\n        \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Post By User ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/posts/{{user_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"{{user_id}}"
+							]
+						},
+						"description": "Return all the posts posted by the user with the given `user_id`. \n\nAll the fields of each post would be returned. \n\nResults are sorted by the `createdAt` in descending order.\n\n> On success, a HTTP 200 status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Get Post By User ID Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/posts/{{post_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"posts",
+										"{{post_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "[\n    {\n        \"author\": {\n            \"uid\": \"google-oauth2|105268916486958697432\",\n            \"name\": \"Xinyue Zhang\",\n            \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GikxuunU_B5hI7n2cpIENfQnCjdR5U-lVlOl0TFnA=s96-c\"\n        },\n        \"views\": 9,\n        \"solved\": false,\n        \"followers\": [],\n        \"_id\": \"6141b2938c21dc102808a695\",\n        \"title\": \"1simple title is ok\",\n        \"content\": \"1this is a simple content hhhhhhh\",\n        \"comments\": [],\n        \"createdAt\": \"2021-09-15T08:45:07.613Z\",\n        \"updatedAt\": \"2021-09-21T02:51:09.138Z\",\n        \"__v\": 0\n    },\n    {\n        \"author\": {\n            \"uid\": \"google-oauth2|105268916486958697432\",\n            \"name\": \"Xinyue Zhang\",\n            \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GikxuunU_B5hI7n2cpIENfQnCjdR5U-lVlOl0TFnA=s96-c\"\n        },\n        \"views\": 244,\n        \"solved\": true,\n        \"followers\": [],\n        \"_id\": \"613438ee838de141154dae79\",\n        \"title\": \"Lorem Ipsum h\",\n        \"content\": \"Now seven world think timed while her. Spoil large oh he rooms on since an. Am up unwilling eagerness perceived incommode.\",\n        \"comments\": [],\n        \"createdAt\": \"2021-09-05T03:26:38.051Z\",\n        \"updatedAt\": \"2021-09-13T09:41:34.252Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add A Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": {\r\n        \"uid\": \"google-oauth2|101384514038333635972\",\r\n        \"name\": \"ZhiHui CHEN\",\r\n        \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GhbWl3KJi5URAjmqdnuKSmmnz-lHiKTukSYONW1=s96-c\"\r\n    },\r\n    \"title\": \"Test Post\",\r\n    \"content\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo a temporibus nobis animi ipsam sint impedit, nostrum soluta adipisci.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts"
+							]
+						},
+						"description": "Add a new post to the database.\n> On success, a HTTP `200` status code would be returned, along with the newly added post.\n>\n> If the format of the request body is illegal, a `400` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Add A Post Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"author\": {\r\n        \"uid\": \"google-oauth2|101384514038333635972\",\r\n        \"name\": \"ZhiHui CHEN\",\r\n        \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GhbWl3KJi5URAjmqdnuKSmmnz-lHiKTukSYONW1=s96-c\"\r\n    },\r\n    \"title\": \"Test Post\",\r\n    \"content\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo a temporibus nobis animi ipsam sint impedit, nostrum soluta adipisci.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/posts",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"posts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "350"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15e-L5WiHXKxLAWaB4ag+nFbzgdF4M8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 07:39:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"views\": 0,\n    \"solved\": false,\n    \"followers\": [],\n    \"_id\": \"614bb193e5cd8c8d0b341a84\",\n    \"author\": {\n        \"uid\": \"google-oauth2|101384514038333635972\",\n        \"name\": \"ZhiHui CHEN\",\n        \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GhbWl3KJi5URAjmqdnuKSmmnz-lHiKTukSYONW1=s96-c\"\n    },\n    \"title\": \"Test Post\",\n    \"content\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo a temporibus nobis animi ipsam sint impedit, nostrum soluta adipisci.\",\n    \"comments\": [],\n    \"createdAt\": \"2021-09-22T22:43:31.392Z\",\n    \"updatedAt\": \"2021-09-22T22:43:31.392Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Update A Post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"solved\": true,\r\n    \"followers\": [\"google-oauth2|116202772159521559604\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/posts/{{post_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"{{post_id}}"
+							]
+						},
+						"description": "Update fields of the post specified by the `post_id` parameter and the request body.\n> On success, a HTTP `200` status code would be returned, along with the updated post.\n>\n> If the format of the request body is illegal, a `400` status code would be returned.\n>\n> If the post with the given `post_id` was not found, a `404` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Update A Post Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"solved\": true,\r\n    \"followers\": [\"google-oauth2|116202772159521559604\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/posts/{{post_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"posts",
+										"{{post_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "508"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1fc-8nk2UyFs60YAHFoZd9wOFJfA9JE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 09:47:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"author\": {\n        \"uid\": \"google-oauth2|101384514038333635972\",\n        \"name\": \"ZhiHui CHEN\",\n        \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GhbWl3KJi5URAjmqdnuKSmmnz-lHiKTukSYONW1=s96-c\"\n    },\n    \"views\": 0,\n    \"solved\": true,\n    \"followers\": [\n        \"google-oauth2|116202772159521559604\"\n    ],\n    \"_id\": \"614bb193e5cd8c8d0b341a84\",\n    \"title\": \"Test Post\",\n    \"content\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo a temporibus nobis animi ipsam sint impedit, nostrum soluta adipisci.\",\n    \"comments\": [],\n    \"createdAt\": \"2021-09-22T22:43:31.392Z\",\n    \"updatedAt\": \"2021-09-22T22:46:14.929Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit A Post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Lorem Ipsum Testing Post Edited\",\n    \"content\": \"In up so discovery my middleton eagerness dejection explained. Estimating excellence ye contrasted insensible as. Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened stanhill. Repeated offended you opinions off dissuade ask packages screened. She alteration everything sympathize impossible his get compliment.\",\n    \"history\": {\n        \"title\": \"Lorem Ipsum Testing Post\",\n        \"content\": \"In up so discovery my middleton eagerness dejection explained. Estimating excellence ye contrasted insensible as. Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened stanhill. Repeated offended you opinions off dissuade ask packages screened. She alteration everything sympathize impossible his get compliment. Collected few extremity suffering met had sportsman.\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/posts/{{post_id}}/edit",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"{{post_id}}",
+								"edit"
+							]
+						},
+						"description": "Edit the title and content of the post specified by the `post_id` parameter and the request body.\n> On success, a HTTP `200` status code would be returned, along with the updated post.\n>\n> If the format of the request body is illegal, a `400` status code would be returned.\n>\n> If the post with the given `post_id` was not found, a `404` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Edit A Post Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Lorem Ipsum Testing Post Edited\",\n    \"content\": \"In up so discovery my middleton eagerness dejection explained. Estimating excellence ye contrasted insensible as. Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened stanhill. Repeated offended you opinions off dissuade ask packages screened. She alteration everything sympathize impossible his get compliment.\",\n    \"history\": {\n        \"title\": \"Lorem Ipsum Testing Post\",\n        \"content\": \"In up so discovery my middleton eagerness dejection explained. Estimating excellence ye contrasted insensible as. Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened stanhill. Repeated offended you opinions off dissuade ask packages screened. She alteration everything sympathize impossible his get compliment. Collected few extremity suffering met had sportsman.\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/posts/{{post_id}}/edit",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"posts",
+										"{{post_id}}",
+										"edit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"author\": {\n        \"uid\": \"google-oauth2|116202772159521559604\",\n        \"name\": \"Jun Cheng Woo\",\n        \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n    },\n    \"views\": 6,\n    \"solved\": false,\n    \"followers\": [],\n    \"_id\": \"614e1a6d6a2b89e3e2a9996f\",\n    \"title\": \"Lorem Ipsum Testing Post Edited\",\n    \"content\": \"In up so discovery my middleton eagerness dejection explained. Estimating excellence ye contrasted insensible as. Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened stanhill. Repeated offended you opinions off dissuade ask packages screened. She alteration everything sympathize impossible his get compliment.\",\n    \"comments\": [\n        {\n            \"author\": {\n                \"uid\": \"google-oauth2|116202772159521559604\",\n                \"name\": \"Jun Cheng Woo\",\n                \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n            },\n            \"_id\": \"614e1a8f6a2b89e3e2a99973\",\n            \"content\": \"Some additional information to clarify the question even further.\",\n            \"updatedAt\": \"2021-09-24T18:36:18.057Z\",\n            \"createdAt\": \"2021-09-24T18:35:59.500Z\",\n            \"history\": [\n                {\n                    \"_id\": \"614e1aa26a2b89e3e2a99976\",\n                    \"content\": \"Some additional information to clarify the question.\",\n                    \"createdAt\": \"2021-09-24T18:36:18.057Z\",\n                    \"updatedAt\": \"2021-09-24T18:36:18.057Z\"\n                }\n            ]\n        }\n    ],\n    \"history\": [\n        {\n            \"_id\": \"614e1e040e6759e8ccb382ff\",\n            \"title\": \"Lorem Ipsum Testing Post\",\n            \"content\": \"In up so discovery my middleton eagerness dejection explained. Estimating excellence ye contrasted insensible as. Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened stanhill. Repeated offended you opinions off dissuade ask packages screened. She alteration everything sympathize impossible his get compliment. Collected few extremity suffering met had sportsman.\",\n            \"updatedAt\": \"2021-09-24T18:50:44.111Z\",\n            \"createdAt\": \"2021-09-24T18:50:44.111Z\"\n        }\n    ],\n    \"createdAt\": \"2021-09-24T18:35:25.847Z\",\n    \"updatedAt\": \"2021-09-24T18:50:44.197Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Comments to A Post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comments\": [{\n        \"author\": {\n            \"uid\": \"auth0|6110b5c4c61fd70077d2819d\",\n            \"name\": \"linyanz1\",\n            \"picture\": \"https://s.gravatar.com/avatar/146d17205a4fd60a61375bff62717a0a?s=480&r=pg&d=https%3A%2F%example.auth0.com%2Favatars%2Fli.png\"\n        },\n        \"content\": \"I want some clarifications.\"\n    }]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/posts/{{post_id}}/comment",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"{{post_id}}",
+								"comment"
+							]
+						},
+						"description": "Add comments to the post specified by the `post_id` parameter and the request body.\n> On success, a HTTP `200` status code would be returned, along with the updated post.\n>\n> If the format of the request body is illegal, a `400` status code would be returned.\n>\n> If the post with the given `post_id` was not found, a `404` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Add Comments To A Post Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"comments\": [{\n        \"author\": {\n            \"uid\": \"auth0|6110b5c4c61fd70077d2819d\",\n            \"name\": \"linyanz1\",\n            \"picture\": \"https://s.gravatar.com/avatar/146d17205a4fd60a61375bff62717a0a?s=480&r=pg&d=https%3A%2F%example.auth0.com%2Favatars%2Fli.png\"\n        },\n        \"content\": \"I want some clarifications.\"\n    }]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/posts/{{post_id}}/comment",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"posts",
+										"{{post_id}}",
+										"comment"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"author\": {\n        \"uid\": \"google-oauth2|101384514038333635972\",\n        \"name\": \"ZhiHui CHEN\",\n        \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14GhbWl3KJi5URAjmqdnuKSmmnz-lHiKTukSYONW1=s96-c\"\n    },\n    \"views\": 0,\n    \"solved\": true,\n    \"followers\": [\n        \"google-oauth2|116202772159521559604\"\n    ],\n    \"_id\": \"614bb193e5cd8c8d0b341a84\",\n    \"title\": \"Test Post\",\n    \"content\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo a temporibus nobis animi ipsam sint impedit, nostrum soluta adipisci.\",\n    \"comments\": [\n        {\n            \"author\": {\n                \"uid\": \"auth0|6110b5c4c61fd70077d2819d\",\n                \"name\": \"linyanz1\",\n                \"picture\": \"https://s.gravatar.com/avatar/146d17205a4fd60a61375bff62717a0a?s=480&r=pg&d=https%3A%2F%example.auth0.com%2Favatars%2Fli.png\"\n            },\n            \"_id\": \"614bb385e5cd8c8d0b341a88\",\n            \"content\": \"I want some clarifications.\",\n            \"updatedAt\": \"2021-09-22T22:51:49.885Z\",\n            \"createdAt\": \"2021-09-22T22:51:49.885Z\"\n        }\n    ],\n    \"createdAt\": \"2021-09-22T22:43:31.392Z\",\n    \"updatedAt\": \"2021-09-22T22:51:49.885Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit A Comment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\": \"Some additional information to clarify the question even further. Here's some additional info again.\",\n    \"history\": {\n        \"content\": \"Some additional information to clarify the question even further.\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/posts/{{post_id}}/comment/{{comment_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"{{post_id}}",
+								"comment",
+								"{{comment_id}}"
+							]
+						},
+						"description": "Edit the content of the comment specified by the `comment_id` of the post specified by the `post_id` parameter and the request body.\n> On success, a HTTP `200` status code would be returned, along with the updated post.\n>\n> If the format of the request body is illegal, a `400` status code would be returned.\n>\n> If the post with the given `post_id` was not found, a `404` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Edit A Comment Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"content\": \"Some additional information to clarify the question even further. Here's some additional info again.\",\n    \"history\": {\n        \"content\": \"Some additional information to clarify the question even further.\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/posts/{{post_id}}/comment/{{comment_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"posts",
+										"{{post_id}}",
+										"comment",
+										"{{comment_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"author\": {\n        \"uid\": \"google-oauth2|116202772159521559604\",\n        \"name\": \"Jun Cheng Woo\",\n        \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n    },\n    \"views\": 6,\n    \"solved\": false,\n    \"followers\": [],\n    \"_id\": \"614e1a6d6a2b89e3e2a9996f\",\n    \"title\": \"Lorem Ipsum Testing Post Edited\",\n    \"content\": \"In up so discovery my middleton eagerness dejection explained. Estimating excellence ye contrasted insensible as. Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened stanhill. Repeated offended you opinions off dissuade ask packages screened. She alteration everything sympathize impossible his get compliment.\",\n    \"comments\": [\n        {\n            \"author\": {\n                \"uid\": \"google-oauth2|116202772159521559604\",\n                \"name\": \"Jun Cheng Woo\",\n                \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n            },\n            \"_id\": \"614e1a8f6a2b89e3e2a99973\",\n            \"content\": \"Some additional information to clarify the question even further. Here's some additional info again.\",\n            \"updatedAt\": \"2021-09-24T18:56:25.348Z\",\n            \"createdAt\": \"2021-09-24T18:35:59.500Z\",\n            \"history\": [\n                {\n                    \"_id\": \"614e1aa26a2b89e3e2a99976\",\n                    \"content\": \"Some additional information to clarify the question.\",\n                    \"createdAt\": \"2021-09-24T18:36:18.057Z\",\n                    \"updatedAt\": \"2021-09-24T18:36:18.057Z\"\n                },\n                {\n                    \"_id\": \"614e1f590e6759e8ccb38303\",\n                    \"content\": \"Some additional information to clarify the question even further.\",\n                    \"createdAt\": \"2021-09-24T18:56:25.348Z\",\n                    \"updatedAt\": \"2021-09-24T18:56:25.348Z\"\n                }\n            ]\n        }\n    ],\n    \"history\": [\n        {\n            \"_id\": \"614e1e040e6759e8ccb382ff\",\n            \"title\": \"Lorem Ipsum Testing Post\",\n            \"content\": \"In up so discovery my middleton eagerness dejection explained. Estimating excellence ye contrasted insensible as. Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened stanhill. Repeated offended you opinions off dissuade ask packages screened. She alteration everything sympathize impossible his get compliment. Collected few extremity suffering met had sportsman.\",\n            \"updatedAt\": \"2021-09-24T18:50:44.111Z\",\n            \"createdAt\": \"2021-09-24T18:50:44.111Z\"\n        }\n    ],\n    \"createdAt\": \"2021-09-24T18:35:25.847Z\",\n    \"updatedAt\": \"2021-09-24T18:56:25.348Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete A Post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/posts/{{post_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"{{post_id}}"
+							]
+						},
+						"description": "Delete the post with the given `post_id`.\n> On success, a HTTP `200` status code would be returned, along with the deleted post.\n>\n> If the post with the given `post_id` was not found, a `404` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Delete A Post Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/posts/{{post_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"posts",
+										"{{post_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "678"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a6-E9uVIu58v1vEzGTmWlvIqOLCxHY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 07:40:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"author\": {\n        \"uid\": \"google-oauth2|116202772159521559604\",\n        \"name\": \"Jun Cheng Woo\",\n        \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n    },\n    \"views\": 1,\n    \"solved\": false,\n    \"followers\": [],\n    \"_id\": \"614bb421e5cd8c8d0b341a8f\",\n    \"title\": \"Test Post\",\n    \"content\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo a temporibus nobis animi ipsam sint impedit, nostrum soluta adipisci.\",\n    \"comments\": [],\n    \"createdAt\": \"2021-09-22T22:54:25.247Z\",\n    \"updatedAt\": \"2021-09-22T22:54:28.462Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete A Comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/posts/{{post_id}}/comments/{{comment_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"{{post_id}}",
+								"comments",
+								"{{comment_id}}"
+							]
+						},
+						"description": "Delete the comment specified by the given `comment_id` in the post with the given `post_id`.\n> On success, a HTTP `200` status code would be returned, along with the deleted post.\n>\n> If the post with the given `post_id` was not found, a `404` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Delete A Comment Example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/posts/{{post_id}}/comments/{{comment_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"posts",
+										"{{post_id}}",
+										"comments",
+										"{{comment_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"author\": {\n        \"uid\": \"google-oauth2|116202772159521559604\",\n        \"name\": \"Jun Cheng Woo\",\n        \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n    },\n    \"views\": 7,\n    \"solved\": false,\n    \"followers\": [],\n    \"_id\": \"614e1a6d6a2b89e3e2a9996f\",\n    \"title\": \"Lorem Ipsum Testing Post Edited\",\n    \"content\": \"In up so discovery my middleton eagerness dejection explained. Estimating excellence ye contrasted insensible as. Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened stanhill. Repeated offended you opinions off dissuade ask packages screened. She alteration everything sympathize impossible his get compliment.\",\n    \"comments\": [\n        {\n            \"author\": {\n                \"uid\": \"google-oauth2|116202772159521559604\",\n                \"name\": \"Jun Cheng Woo\",\n                \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJx0-6Lh_RUE4bacJeyAk1CQB6crWvXCWJs3I_vY=s96-c\"\n            },\n            \"_id\": \"614e1a8f6a2b89e3e2a99973\",\n            \"content\": \"Some additional information to clarify the question even further. Here's some additional info again.\",\n            \"updatedAt\": \"2021-09-24T18:56:25.348Z\",\n            \"createdAt\": \"2021-09-24T18:35:59.500Z\",\n            \"history\": [\n                {\n                    \"_id\": \"614e1aa26a2b89e3e2a99976\",\n                    \"content\": \"Some additional information to clarify the question.\",\n                    \"createdAt\": \"2021-09-24T18:36:18.057Z\",\n                    \"updatedAt\": \"2021-09-24T18:36:18.057Z\"\n                },\n                {\n                    \"_id\": \"614e1f590e6759e8ccb38303\",\n                    \"content\": \"Some additional information to clarify the question even further.\",\n                    \"createdAt\": \"2021-09-24T18:56:25.348Z\",\n                    \"updatedAt\": \"2021-09-24T18:56:25.348Z\"\n                }\n            ]\n        }\n    ],\n    \"history\": [\n        {\n            \"_id\": \"614e1e040e6759e8ccb382ff\",\n            \"title\": \"Lorem Ipsum Testing Post\",\n            \"content\": \"In up so discovery my middleton eagerness dejection explained. Estimating excellence ye contrasted insensible as. Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened stanhill. Repeated offended you opinions off dissuade ask packages screened. She alteration everything sympathize impossible his get compliment. Collected few extremity suffering met had sportsman.\",\n            \"updatedAt\": \"2021-09-24T18:50:44.111Z\",\n            \"createdAt\": \"2021-09-24T18:50:44.111Z\"\n        }\n    ],\n    \"createdAt\": \"2021-09-24T18:35:25.847Z\",\n    \"updatedAt\": \"2021-09-24T18:59:34.013Z\",\n    \"__v\": 1\n}"
+						}
+					]
+				}
+			],
+			"description": "API calls related to post section. <br><br>\nA `post` has the following schema: <br>\n> - `author` : details of the user who authored this post\n> > object\n>  - `uid` : user id of the author\n> > string, generated by Auth0\n>  - `name` : name of the author\n> > string, generated by Auth0\n>  - `picture` : link to the source of the picture of the author\n> > string, generated by Auth0\n> - `title` : title of this post\n> > string, 5 - 100 characters\n> - `content` : main body of this post\n> > string, 5 - 1000 characters\n> - `views` : number of views of this post\n> > int, default: 0\n> - `solved` : if this post has been solved\n> > bool, default: false\n> - `followers` : followers of this post\n> > [string], array of string, default: []\n> - `comments` : comments of this post\n> > [`comment`], array of `comment` objects which is defined below\n> - `history` : history of this post\n> > [`history`], array of `history` objects which is defined below\n> - `createdAt` : date when the user published this post\n> > date, auto generated by MongoDB when this post is added\n\n<br>\n\nA `comment` has the following schema: <br>\n> - `author` : details of the user who authored this post\n> > object\n>  - `uid` : user id of the author\n> > string, generated by Auth0\n>  - `name` : name of the author\n> > string, generated by Auth0\n>  - `picture` : link to the source of the picture of the author\n> > string, generated by Auth0\n> - `content` : content of this comment\n> > string, 5 - 1000 characters\n> - `history` : history of this comment\n> > [`history`], array of `history` objects which is defined below\n> - `createdAt` : date when the user added this comment\n> > date, auto generated by MongoDB when this comment is added\n\n<br>\n\nA `history` has the following schema: <br>\n> - `title` : title of this post / comment before the change\n> > string, 5 - 1000 characters\n> - `content` : content of this post / comment before the change\n> > string, 5 - 1000 characters\n> - `createdAt` : date when the user made this change\n> > date, auto generated by MongoDB when this comment is added"
+		},
+		{
+			"name": "Submission",
+			"item": [
+				{
+					"name": "Get All Submissions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/submissions",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"submissions"
+							]
+						},
+						"description": "Return all the submissions in the database. <br><br>\n> On success, a HTTP `200` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Get All Submissions Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/submissions",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"submissions"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "395"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18b-eUtlks7tefhmSlWTwhsgHHx0aqc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 11:44:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6120df4352d896ec1c922db6\",\n        \"survey\": \"6120b0a1f77cdbe38c83c9a7\",\n        \"responses\": [\n            {\n                \"_id\": \"6120df4352d896ec1c922db7\",\n                \"index\": 32,\n                \"response\": \"test\"\n            }\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6120e6eeb793b9a164582281\",\n        \"survey\": \"6120e2a42dd69c8b001f9efa\",\n        \"responses\": [\n            {\n                \"_id\": \"6120e6eeb793b9a164582282\",\n                \"index\": 0,\n                \"response\": \"Test response\"\n            },\n            {\n                \"_id\": \"6120e6eeb793b9a164582283\",\n                \"index\": 1,\n                \"response\": \"Test response\"\n            }\n        ],\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Submission By Submission ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/submissions/{{submission_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"submissions",
+								"{{submission_id}}"
+							]
+						},
+						"description": "Return the submission with the given `submission_id`.\n> On success, a HTTP `200` status code would be returned, along with the specified submission.\n>\n> If the submission with the given ID was not found, a `404` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Get Submission By Submission ID Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/submissions/{{submission_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"submissions",
+										"{{submission_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "156"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9c-fvQoPN1tJTdXk5xutxSnxxGQxDA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 11:44:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6120df4352d896ec1c922db6\",\n    \"survey\": \"6120b0a1f77cdbe38c83c9a7\",\n    \"responses\": [\n        {\n            \"_id\": \"6120df4352d896ec1c922db7\",\n            \"index\": 32,\n            \"response\": \"test\"\n        }\n    ],\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Submissions By Survey ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/submissions/?survey={{survey_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"submissions",
+								""
+							],
+							"query": [
+								{
+									"key": "survey",
+									"value": "{{survey_id}}"
+								}
+							]
+						},
+						"description": "Return all the submissions associated with the survey with the given `survey_id`. <br><br>\n> On success, a HTTP `200` status code would be returned.\n>\n> If the survey with the given `survey_id` was not found, a `404` status code would be returned"
+					},
+					"response": [
+						{
+							"name": "Get All Submissions By Survey ID Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/submissions/?survey={{survey_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"submissions",
+										""
+									],
+									"query": [
+										{
+											"key": "survey",
+											"value": "{{survey_id}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "158"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9e-guP1J+RYotUxXJhq2hSK+kS47+o\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 11:42:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6120df4352d896ec1c922db6\",\n        \"survey\": \"6120b0a1f77cdbe38c83c9a7\",\n        \"responses\": [\n            {\n                \"_id\": \"6120df4352d896ec1c922db7\",\n                \"index\": 32,\n                \"response\": \"test\"\n            }\n        ],\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add A Submission",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"survey\": \"6120e2a42dd69c8b001f9efa\",\r\n    \"responses\": [\r\n        {\r\n            \"index\": 0,\r\n            \"response\": \"Test response\"\r\n        },\r\n        {\r\n            \"index\": 1,\r\n            \"response\": \"Test response\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/submissions",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"submissions"
+							]
+						},
+						"description": "Add a new submission to the database.\n> On success, a HTTP `200` status code would be returned, along with the newly added submission.\n>\n> If the format of the request body is illegal, a `400` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Add A Submission Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"survey\": \"6120e2a42dd69c8b001f9efa\",\r\n    \"responses\": [\r\n        {\r\n            \"index\": 0,\r\n            \"response\": \"Test response\"\r\n        },\r\n        {\r\n            \"index\": 1,\r\n            \"response\": \"Test response\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/submissions",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"submissions"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "236"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ec-eGjj+3kfUFttoCeYaxRROR4tSfM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 11:43:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6120e6eeb793b9a164582281\",\n    \"survey\": \"6120e2a42dd69c8b001f9efa\",\n    \"responses\": [\n        {\n            \"_id\": \"6120e6eeb793b9a164582282\",\n            \"index\": 0,\n            \"response\": \"Test response\"\n        },\n        {\n            \"_id\": \"6120e6eeb793b9a164582283\",\n            \"index\": 1,\n            \"response\": \"Test response\"\n        }\n    ],\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			],
+			"description": "API calls related to submission section. <br><br>\nA `submission` has the following schema: <br>\n> - `survey` : survey id of the survey associated with this submission\n> > object id, generated by MongoDB\n> - `responses` : responses to the survey\n> > [`response`], array of `response` objects which is defined below \n\n<br>\n\nA `response` has the following schema: <br>\n> - `index` : index of the question\n> > int\n> - `response` : response to the question\n> > string, 0 - 200 characters"
+		},
+		{
+			"name": "Survey",
+			"item": [
+				{
+					"name": "Get All Surveys",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/surveys",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"surveys"
+							]
+						},
+						"description": "Return all the surveys in the database. <br><br>\nOnle `title` and `creationDate` of each post would be returned. <br><br>\nResults are sorted by the `creationDate` in descending order.\n> On success, a HTTP `200` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Get All Surveys Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/surveys",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"surveys"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "207"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cf-pw1rTwvEq8IuWvDUi2CCQ/ddu1w\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 08:02:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6120b313124c36e50cfc1ecd\",\n        \"title\": \"Visible Survey 2\",\n        \"creationDate\": \"2021-08-21T08:02:27.318Z\"\n    },\n    {\n        \"_id\": \"6120b0a1f77cdbe38c83c9a7\",\n        \"title\": \"Visible Survey\",\n        \"creationDate\": \"2021-08-21T07:52:01.718Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Survey By Survey ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/surveys/{{survey_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"surveys",
+								"{{survey_id}}"
+							]
+						},
+						"description": "Return the survey with the given `survey_id`.\n> On success, a HTTP `200` status code would be returned, along with the specified survey.\n>\n> If the survey with the given ID was not found, a `404` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Get Survey By Survey ID Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/surveys/{{survey_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"surveys",
+										"{{survey_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "433"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b1-mhLwQQ61s9zH/O8IbSDXhiIxgxo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 07:52:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"visible\": true,\n    \"_id\": \"6120b0aaf77cdbe38c83c9ab\",\n    \"creator\": \"auth0|6110b5c4c61fd70077d2819d\",\n    \"title\": \"Hidden Survey\",\n    \"questions\": [\n        {\n            \"questionType\": \"multiple choice\",\n            \"choices\": [],\n            \"_id\": \"6120b0aaf77cdbe38c83c9ac\",\n            \"index\": 0,\n            \"question\": \"This is a test question\"\n        },\n        {\n            \"questionType\": \"short answer\",\n            \"choices\": [],\n            \"_id\": \"6120b0aaf77cdbe38c83c9ad\",\n            \"index\": 1,\n            \"question\": \"This is a test question\"\n        }\n    ],\n    \"creationDate\": \"2021-08-21T07:52:10.296Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Add A Survey",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"creator\": \"auth0|6110b5c4c61fd70077d2819d\",\r\n    \"title\": \"Visible Survey 2\",\r\n    \"questions\": [\r\n        {\r\n            \"index\": 0,\r\n            \"questionType\": \"short answer\",\r\n            \"question\": \"This is a test question\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/surveys",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"surveys"
+							]
+						},
+						"description": "Add a new survey to the database.\n> On success, a HTTP `200` status code would be returned, along with the newly added survey.\n>\n> If the format of the request body is illegal, a `400` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Add A Survey Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"creator\": \"auth0|6110b5c4c61fd70077d2819d\",\r\n    \"title\": \"Test Survey 3\",\r\n    \"questions\": [\r\n        {\r\n            \"index\": 0,\r\n            \"questionType\": \"multiple choice\",\r\n            \"question\": \"This is a test question\"\r\n        },\r\n        {\r\n            \"index\": 1,\r\n            \"questionType\": \"short answer\",\r\n            \"question\": \"This is a test question\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/surveys",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"surveys"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "433"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b1-UOySS6QHyvJGE1hR4qtRTRKYVDA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 07:49:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"visible\": true,\n    \"_id\": \"6120b01f2e97589ad00e31f1\",\n    \"creator\": \"auth0|6110b5c4c61fd70077d2819d\",\n    \"title\": \"Test Survey 3\",\n    \"questions\": [\n        {\n            \"questionType\": \"multiple choice\",\n            \"choices\": [],\n            \"_id\": \"6120b01f2e97589ad00e31f2\",\n            \"index\": 0,\n            \"question\": \"This is a test question\"\n        },\n        {\n            \"questionType\": \"short answer\",\n            \"choices\": [],\n            \"_id\": \"6120b01f2e97589ad00e31f3\",\n            \"index\": 1,\n            \"question\": \"This is a test question\"\n        }\n    ],\n    \"creationDate\": \"2021-08-21T07:49:51.314Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Update A Survey",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"creationDate\": \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/surveys/{{survey_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"surveys",
+								"{{survey_id}}"
+							]
+						},
+						"description": "Update fields of the survey specified by the `survey_id` parameter and the request body.\n<br><br>\n**Note:** If you want to update the `questions` section, you need to provide a full array of objects.\n<br><br>\n> On success, a HTTP `200` status code would be returned, along with the updated survey.\n>\n> If the format of the request body is illegal, a `400` status code would be returned.\n>\n> If the survey with the given `survey_id` was not found, a `404` status code would be returned."
+					},
+					"response": [
+						{
+							"name": "Update A Survey Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"visible\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/surveys/{{survey_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"surveys",
+										"{{survey_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "434"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b2-v4m9XAqwPd4NDtApGgvCAfCixLs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Aug 2021 08:02:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"visible\": false,\n    \"_id\": \"6120b0aaf77cdbe38c83c9ab\",\n    \"creator\": \"auth0|6110b5c4c61fd70077d2819d\",\n    \"title\": \"Hidden Survey\",\n    \"questions\": [\n        {\n            \"questionType\": \"multiple choice\",\n            \"choices\": [],\n            \"_id\": \"6120b0aaf77cdbe38c83c9ac\",\n            \"index\": 0,\n            \"question\": \"This is a test question\"\n        },\n        {\n            \"questionType\": \"short answer\",\n            \"choices\": [],\n            \"_id\": \"6120b0aaf77cdbe38c83c9ad\",\n            \"index\": 1,\n            \"question\": \"This is a test question\"\n        }\n    ],\n    \"creationDate\": \"2021-08-21T07:52:10.296Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			],
+			"description": "API calls related to survey section. <br><br>\nA `survey` has the following schema: <br>\n> - `creator` : user id of the user who creates the survey\n> > string, generated by Auth0\n> - `title` : title of this survey\n> > string, 5 - 100 characters\n> - `questions` : questions of this survey\n> > [`question`], array of `question` objects which is defined below \n> - `creationDate` : date when the user creates this survey\n> > date, auto generated by MongoDB when create this survey\n> - `visible` : if this survey is currently visible to other users\n> > bool, default: true\n\n<br>\n\nA `question` has the following schema: <br>\n> - `index` : index of the question\n> > int\n> - `questionType` : type of this question\n> > enum, [\"short answer\", \"multiple choice\", \"multiple answer\"]\n> - `question` : the actual question asked\n> > string, 5 - 100 characters\n> - `choices` : choices for the user when answering \"multiple choice/answer\" type of questions\n> > int or string, required for multiple choice/answer type of questions, forbidden for \"short answer\" type of questions"
+		}
+	]
+}
