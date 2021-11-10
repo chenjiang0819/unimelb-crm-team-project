@@ -1,0 +1,178 @@
+body {
+  background-color: #f9f9fa;
+}
+
+.padding {
+  padding: 3rem !important;
+}
+
+.user-card-full {
+  overflow: hidden;
+}
+
+.user-card-full .card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  border: none;
+  margin-bottom: 30px;
+}
+
+.m-r-0 {
+  margin-right: 0px;
+}
+
+.m-l-0 {
+  margin-left: 0px;
+}
+
+.user-card-full .user-profile {
+  border-radius: 5px 0 0 5px;
+}
+
+.bg-c-lite-green {
+  background: -webkit-gradient(linear, left bottom, right top, from(#160b88), to(#4a51aa));
+  background: linear-gradient(to right, #160b88, #4a51aa);
+}
+
+.img-thumbnail {
+  width: 135px;
+  height: 135px;
+  padding: 0;
+  border: 4px solid #fff;
+}
+
+.user-profile {
+  padding: 3.5rem 0;
+}
+
+.card-block {
+  padding: 1.25rem;
+}
+
+.m-b-25 {
+  margin-bottom: 25px;
+}
+
+.img-radius {
+  border-radius: 5px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.user-card-full .card .card-block p {
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .user-card-full p {
+    font-size: 14px;
+  }
+}
+
+.user-card-full .card-block {
+  padding: 1.5rem;
+}
+
+.b-b-default {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.user-card-full .card .card-block p {
+  line-height: 25px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.text-muted {
+  color: #919aa3 !important;
+}
+
+.f-w-600 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.profile-title {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.user-card-full .social-link li a {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-content {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .profile-content {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .profile-title {
+    font-size: 1.3rem;
+  }
+  .f-w-600 {
+    font-size: 1.1rem;
+  }
+  .img-thumbnail {
+    width: 120px;
+    height: 120px;
+    padding: 0;
+    border: 2px solid #fff;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile-content {
+    font-weight: 300;
+    font-size: 0.85rem;
+  }
+  .profile-title {
+    font-size: 1.2rem;
+  }
+  .f-w-600 {
+    font-size: 1rem;
+  }
+  .user-card-full .card-block {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .img-thumbnail {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    border: 1.5px solid #fff;
+  }
+}
+
+.editIconButton {
+  display: flex;
+  margin: 0 0 0.5rem 0;
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+.editIconButton:hover {
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 576px) {
+  .profile .modal-dialog {
+    width: calc(100% - 1rem);
+  }
+}
+
+.modal {
+  padding-right: 0 !important;
+}
