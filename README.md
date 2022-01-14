@@ -57,6 +57,9 @@ If you have any questions with the website. Please contact us via [Discord](http
 
 ## Getting started
 
+### Mock-up
+https://xd.adobe.com/view/a44aa8db-c7a8-451b-92ad-d995ef04b799-f119/
+
 ### File structure
 
 | File/Folder  | Description         |
