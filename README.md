@@ -1,21 +1,45 @@
-<p align="center">
-  <a href="http://localhost:3000/">
-    <img src="https://i.imgur.com/MYHeh0S.png" alt="Team Connected logo" />
-  </a>
-</p>
+# Connected CRM — Team Coursework
+
+## Academic Context
+
+University: University of Melbourne  
+Course: COMP30022 IT Project  
+Year: Semester 2, 2021  
+Project type: team
+
+## My Contribution
+
+Chen Jiang was Product Owner and contributed UI/UX design and code. This is a shared team project, not a solo implementation; the existing team roles remain below.
+
+## 2026 AI-Assisted Maintenance
+
+Removed current README identifiers and retired private/deployment links. Removed the hardcoded Auth0 management/test credentials and token request at module import. Management endpoints now default to disabled, enforce validated identity/ownership/admin permission when explicitly enabled, reject malformed inputs, and suppress provider response details. Offline regression checks prove no import-time provider calls and rejection paths. Historical provider tests now require explicit opt-in and environment configuration; defaults use loopback URLs. No real Auth0 or cloud database was contacted.
+
+## Security and Runtime Limitations
+
+A historical Auth0 client secret exists in already-public Git history. Treat it as compromised and revoke/rotate it. Current-source cleanup does not erase history. No history rewrite or automatic visibility change was performed. **Recommend MAKE PRIVATE pending credential revocation and a separately authorized history/privacy review.** Other legacy API routes and dependencies have not received a full new security audit; do not deploy this coursework as a production CRM.
+
+## Build / Run and Verification
+
+Original setup instructions remain below as historical references. `node server/test/security/auth0.cjs` runs the offline security regression. Full application, Auth0 delivery, cloud deployment and original external-dependent suite are NOT VERIFIED. Configure your own environment; no actual credentials are bundled.
+
+## Attribution / Original Snapshot
+
+Team CONNECTED, University of Melbourne. Existing history is preserved; no sensitive original archive branch is newly published. The 2026 portfolio normalization branch is separate from original coursework. No blanket relicensing of teammate code is asserted.
+
+
 ## Navigation
 
--   [Project Background](#Project-Background)
-    -   [Description](#Description)
-    -   [Team Members](#Team-Members)
-    -   [Contact](#contact)
-    -   [Documentation](#Documentation)
--   [Getting started](#Getting-started)
-    -   [File structure](#File-structure)
-    -   [Requirements](#Requirements)
-    -   [Local Development setup](#Local-Development)
+-   [Project Background](#project-background)
+    -   [Description](#description)
+    -   [Team Members](#team-members)
+    -   [Documentation](#documentation)
+-   [Getting started](#getting-started)
+    -   [File structure](#file-structure)
+    -   [Requirements](#requirements)
+    -   [Local Development setup](#local-development)
     -   [Deployment](#deployment-guidelines)
-    -   [Auth0 setup](#Auth0)
+    -   [Auth0 setup](#auth0)
 -   [Version History](#version-history)
 
 ## Project Background
@@ -28,31 +52,25 @@ A CRM web app provides to small businesses, which allows their customers to post
 
 ### Team Members
 
-**Supervisor :** [Abhisha Nirmalathas ](https://example.com/retired-link)
+| Name | Role |
+| --- | --- |
+| Xinyue Zhang | Scrum Master |
+| Chen Jiang | Product Owner; UI/UX and coding contribution |
+| Zhihui Chen | Testing and QA Lead |
+| Jun Cheng Woo | Front-end Lead |
+| Linyan Zhu | Back-end Lead |
 
-|       Name        | Student ID |                      Github                       |                                    Email                                    |        Role         |
-| :---------------: | :--------: | :-----------------------------------------------: | :-------------------------------------------------------------------------: | :-----------------: |
-| **Xinyue Zhang**  |   REDACTED_STUDENT_ID   |         [Jpiec](https://github.com/Jpiec)         |      [redacted-student@users.noreply.github.com](mailto:redacted-student@users.noreply.github.com)      |    Scrum Master     |
-|  **Chen Jiang**   |  REDACTED_STUDENT_ID   | [chenjiang0819](https://github.com/chenjiang0819) | [redacted-student@users.noreply.github.com](mailto:redacted-student@users.noreply.github.com) |    Product Owner    |
-|  **Zhihui Chen**  |   REDACTED_STUDENT_ID   | [Aaronchen0319](https://github.com/Aaronchen0319) |  [redacted-student@users.noreply.github.com](mailto:redacted-student@users.noreply.github.com)  | Testing and QA Lead |
-| **Jun Cheng Woo** |  REDACTED_STUDENT_ID   |    [jayden-woo](https://github.com/jayden-woo)    |     [redacted-student@users.noreply.github.com](mailto:redacted-student@users.noreply.github.com)     |   Front-end Lead    |
-|  **Linyan Zhu**   |  REDACTED_STUDENT_ID   |       [LinyanZ](https://github.com/LinyanZ)       |  [redacted-student@users.noreply.github.com](mailto:redacted-student@users.noreply.github.com)  |    Back-end Lead    |
-
-### Contact
-
-If you have any questions with the website. Please contact us via [Discord](https://example.com/retired-link).
-
-
+Supervisor: Abhisha Nirmalathas. Private course profile, teammate student IDs/emails and expired chat invitation omitted.
 
 ### Documentation
 
--   [Confluence](https://example.com/retired-link)
+-   [Confluence](PRIVATE_TEAM_DOCUMENTATION)
     -   [Architecture Diagram](https://i.imgur.com/h0NCDqB.png)
-    -   [Motivational Model](https://example.com/retired-link)
-    -   [User stories](https://example.com/retired-link)
-    -   [Personas](https://example.com/retired-link)
-    -   [Domain model](https://example.com/retired-link)
-    -   [Database Structure](https://example.com/retired-link)
+    -   [Motivational Model](PRIVATE_TEAM_DOCUMENTATION)
+    -   [User stories](PRIVATE_TEAM_DOCUMENTATION)
+    -   [Personas](PRIVATE_TEAM_DOCUMENTATION)
+    -   [Domain model](PRIVATE_TEAM_DOCUMENTATION)
+    -   [Database Structure](PRIVATE_TEAM_DOCUMENTATION)
 -   [API Documentation](https://documenter.getpostman.com/view/14853484/UV5TEJhS)
 
 ## Getting started
@@ -148,12 +166,12 @@ yarn dev
 
 #### Current deployment
 
-This monorepo project is deployed on Heroku currently, backend and frontend is deployed separately with link below
+Historical deployment references (2021); availability and ownership are NOT VERIFIED. Do not submit credentials to these retired endpoints. Backend and frontend were deployed separately:
 
--   [Front-end](http://localhost:3000/)
--   [Back-end](http://localhost:3000/)
+-   [Front-end](HISTORICAL_FRONTEND_URL)
+-   [Back-end](HISTORICAL_BACKEND_URL)
 
-Some auto-deployment is set up for development server but not production server, for more information please check out ([CICD pipeline setup](https://example.com/retired-link))
+Some auto-deployment is set up for development server but not production server, for more information please check out ([CICD pipeline setup](PRIVATE_TEAM_DOCUMENTATION))
 
 Settings can be updated via [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) or [Heroku dashboard](https://dashboard.heroku.com/apps)
 
@@ -248,7 +266,7 @@ Users are separated into two roles
 All user will be assigned with `User` role automatically when first time signning up on the website, to assign Admin to a user
 
 1. [Signup](https://auth0.com/signup?place=header&type=button&text=sign%20up) for Auth0
-2. Access to [Dashboard](https://example.auth0.com/dashboard/us/dev-8p7irqly/)
+2. Access to [Dashboard](https://example.auth0.com/)
 
 3. Check user management - Roles
 
