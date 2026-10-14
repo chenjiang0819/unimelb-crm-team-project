@@ -2,21 +2,21 @@ const jwt = require("express-jwt");
 const jwtAuthz = require("express-jwt-authz");
 const jwksRsa = require("jwks-rsa");
 
-const audience =
-	process.env.NODE_ENV === "production"
-		? "http://localhost:3000/"
-		: "localhost:3000/api/";
+const domain = process.env.AUTH0_DOMAIN;
+const audience = process.env.AUTH0_AUDIENCE;
+if (!domain || !/^[a-z0-9.-]+\.auth0\.com$/i.test(domain) || !audience)
+  throw new Error('Configure AUTH0_DOMAIN and AUTH0_AUDIENCE before enabling identity integration');
 
 const checkJwt = jwt({
 	secret: jwksRsa.expressJwtSecret({
 		cache: true,
 		rateLimit: true,
 		jwksRequestsPerMinute: 5,
-		jwksUri: `https://example.auth0.com/.well-known/jwks.json`,
+		jwksUri: `https://${domain}/.well-known/jwks.json`,
 	}),
 
-  aud: audience,
-	issuer: [`https://example.auth0.com/`],
+  audience: audience,
+	issuer: [`https://${domain}/`],
 	algorithms: ["RS256"],
 });
 
