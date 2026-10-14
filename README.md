@@ -64,13 +64,13 @@ Supervisor: Abhisha Nirmalathas. Private course profile, teammate student IDs/em
 
 ### Documentation
 
--   [Confluence](PRIVATE_TEAM_DOCUMENTATION)
+-   Confluence (historical link omitted)
     -   [Architecture Diagram](https://i.imgur.com/h0NCDqB.png)
-    -   [Motivational Model](PRIVATE_TEAM_DOCUMENTATION)
-    -   [User stories](PRIVATE_TEAM_DOCUMENTATION)
-    -   [Personas](PRIVATE_TEAM_DOCUMENTATION)
-    -   [Domain model](PRIVATE_TEAM_DOCUMENTATION)
-    -   [Database Structure](PRIVATE_TEAM_DOCUMENTATION)
+    -   Motivational Model (historical link omitted)
+    -   User stories (historical link omitted)
+    -   Personas (historical link omitted)
+    -   Domain model (historical link omitted)
+    -   Database Structure (historical link omitted)
 -   [API Documentation](https://documenter.getpostman.com/view/14853484/UV5TEJhS)
 
 ## Getting started
@@ -168,10 +168,10 @@ yarn dev
 
 Historical deployment references (2021); availability and ownership are NOT VERIFIED. Do not submit credentials to these retired endpoints. Backend and frontend were deployed separately:
 
--   [Front-end](HISTORICAL_FRONTEND_URL)
--   [Back-end](HISTORICAL_BACKEND_URL)
+-   Front-end (historical link omitted)
+-   Back-end (historical link omitted)
 
-Some auto-deployment is set up for development server but not production server, for more information please check out ([CICD pipeline setup](PRIVATE_TEAM_DOCUMENTATION))
+Some auto-deployment is set up for development server but not production server, for more information please check out (CICD pipeline setup (historical link omitted))
 
 Settings can be updated via [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) or [Heroku dashboard](https://dashboard.heroku.com/apps)
 
@@ -270,13 +270,13 @@ All user will be assigned with `User` role automatically when first time signnin
 
 3. Check user management - Roles
 
-<img src="https://i.imgur.com/VaWZNGo.png" alt="Auth0 dashboard usermanagement" style="zoom:50%;" />
+Historical provider-dashboard screenshot omitted from the current README for privacy.
 
 4. Click the Add Users button, assign role to the user
 
 
 
-<img src="https://i.imgur.com/urrB1Ju.png" style="zoom:20%;" />
+Historical provider-dashboard screenshot omitted from the current README for privacy.
 
 
 
