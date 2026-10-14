@@ -8,8 +8,7 @@ import { useHistory } from "react-router-dom";
 const Auth0ProviderWithHistory = ({ children }) => {
   const domain = process.env.REACT_APP_AUTH0_DOMAIN;
   const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
-  const audience =
-    process.env.NODE_ENV === "production" ? "http://localhost:3000/" : "localhost:3000/api/";
+  const audience = process.env.REACT_APP_AUTH0_AUDIENCE;
 
   const history = useHistory();
 
